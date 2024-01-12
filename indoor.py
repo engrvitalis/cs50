@@ -12,4 +12,4 @@ def main:
 	indoor(inp)
 
 def indoor(sentence):
-    print(sentence.lower())
+    print(sentence.lower()) # change the case to lower
