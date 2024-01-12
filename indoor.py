@@ -7,3 +7,8 @@ Date:		12/02/2024.
 
 """
 
+def main:
+	inp = ("Enter your sentence: ")
+	indoor(inp)
+
+
