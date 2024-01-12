@@ -11,4 +11,5 @@ def main:
 	inp = ("Enter your sentence: ")
 	indoor(inp)
 
-
+def indoor(sentence):
+    print(sentence.lower())
