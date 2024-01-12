@@ -4,3 +4,6 @@ replacing each space with ... (i.e., three periods).
 
 """
 
+def main:
+	inp = ("Enter a sentence: ")
+	playback(inp)
