@@ -5,3 +5,7 @@ Programmer: Nnamdi Vitalis Ewuzie
 
 """
 
+def main():
+    inp = input("Enter a string: ")
+    convert(inp)
+    
