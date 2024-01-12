@@ -7,5 +7,13 @@ Programmer: Nnamdi Vitalis Ewuzie
 
 def main():
     inp = input("Enter a string: ")
-    convert(inp)
+    print(convert(inp))
     
+def convert(string):
+    if ":)" in string:
+        string = string.replace(":)", "🙂")
+    if ":(" in string:
+        string = string.replace(":(", "🙁")
+    return string
+    
+main()
