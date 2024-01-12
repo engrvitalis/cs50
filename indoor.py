@@ -7,9 +7,11 @@ Date:		12/02/2024.
 
 """
 
-def main:
-	inp = ("Enter your sentence: ")
-	indoor(inp)
+def main():
+	inp = input("Enter your sentence: ")
+	print(indoor(inp))
 
 def indoor(sentence):
-    print(sentence.lower()) # change the case to lower
+    return sentence.lower()
+
+main()

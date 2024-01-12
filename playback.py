@@ -4,6 +4,11 @@ replacing each space with ... (i.e., three periods).
 
 """
 
-def main:
-	inp = ("Enter a sentence: ")
+def main():
+	inp = input("Enter a sentence: ")
 	playback(inp)
+
+def playback(sentence):
+	print(sentence.replace(" ", "..."))
+
+main()
