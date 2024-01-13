@@ -5,15 +5,14 @@ Programmer: Nnamdi Vitalis Ewuzie
 
 """
 
+
 def main():
     inp = input("Enter a string: ")
     print(convert(inp))
-    
+
 def convert(string):
-    if ":)" in string:
-        string = string.replace(":)", "🙂")
-    if ":(" in string:
-        string = string.replace(":(", "🙁")
+    string = string.replace(":)", "🙂")
+    string = string.replace(":(", "🙁")
     return string
     
 main()
