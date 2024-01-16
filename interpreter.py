@@ -9,17 +9,17 @@ z is an integer
 
 def main():
 	inp = input("Expression: ")
-	operator = inp[inp.find(" ")+1]
+	x, y, z = inp.split(" ")
 
-	match operator:
+	match y:
 		case "+":
-			print(float(inp[:inp.find(" ")]) + float(inp[inp.find(" ")+3:]))
+			print(float(x) + float(z))
 		case "-":
-			print(float(inp[:inp.find(" ")]) - float(inp[inp.find(" ")+3:]))
+			print(float(x) - float(z))
 		case "*":
-			print(float(inp[:inp.find(" ")]) * float(inp[inp.find(" ")+3:]))
+			print(float(x) * float(z))
 		case "/":
-			print(float(inp[:inp.find(" ")]) / float(inp[inp.find(" ")+3:]))
+			print(float(x) / float(z))
 		case _:
 			print("Wrong input")
 
