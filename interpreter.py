@@ -13,13 +13,13 @@ def main():
 
 	match operator:
 		case "+":
-			print(int(inp[:inp.find(" ")]) + int(inp[inp.find(" ")+3:]))
+			print(float(inp[:inp.find(" ")]) + float(inp[inp.find(" ")+3:]))
 		case "-":
-			print(int(inp[:inp.find(" ")]) - int(inp[inp.find(" ")+3:]))
+			print(float(inp[:inp.find(" ")]) - float(inp[inp.find(" ")+3:]))
 		case "*":
-			print(int(inp[:inp.find(" ")]) * int(inp[inp.find(" ")+3:]))
+			print(float(inp[:inp.find(" ")]) * float(inp[inp.find(" ")+3:]))
 		case "/":
-			print(int(inp[:inp.find(" ")]) / int(inp[inp.find(" ")+3:]))
+			print(float(inp[:inp.find(" ")]) / float(inp[inp.find(" ")+3:]))
 		case _:
 			print("Wrong input")
 
