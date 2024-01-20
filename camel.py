@@ -12,10 +12,9 @@ def convert(n):
 		if e.isupper():
 			l.append("_")
 			l.append(e.lower())
-			#print(f'_{e.lower()}', end="")
 		else:
 			l.append(e)
-			#print(e, end="")
+			
 	return "".join(l)
 
 main()
