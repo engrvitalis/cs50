@@ -16,6 +16,9 @@ def main():
 			break
 
 def calculate(amount_due, coin):
-	return amount_due - coin
+	if coin in [5, 10, 25]:
+		return amount_due - coin
+
+	return amount_due
 
 main()
