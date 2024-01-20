@@ -8,7 +8,7 @@ def main():
 
 def remove_vowel(n):
 	for c in n:
-		if c in ['a', 'e', 'i', 'o', 'u']:
+		if c.lower() in ['a', 'e', 'i', 'o', 'u']:
 			continue
 		else:
 			print(c, end="")
