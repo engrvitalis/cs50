@@ -4,13 +4,18 @@ This program prompts the user for the name of a variable in camel case and outpu
 
 def main():
 	n = input("camelCase: ")
-	convert(n)
+	print(convert(n))
 
 def convert(n):
+	l = list()
 	for e in n:
 		if e.isupper():
-			print(f'_{e.lower()}', end="")
+			l.append("_")
+			l.append(e.lower())
+			#print(f'_{e.lower()}', end="")
 		else:
-			print(e, end="")
+			l.append(e)
+			#print(e, end="")
+	return "".join(l)
 
 main()
