@@ -6,8 +6,8 @@ This project implements a program that prompts the user for the name of a file a
 def main():
 
 	#prompt the user for the name of a file
-	f = input("Enter file name: ")
-	e = f[f.find(".")+1:]
+	f = input("Enter file name: ").lower().strip()
+	e = f[-3:]
 
 	#outputs that file’s media type
 	match e:
@@ -16,7 +16,7 @@ def main():
 		case "jpg" | "jpeg":
 			print("image/jpeg")
 		case "png":
-			print("images/png")
+			print("image/png")
 		case "pdf":
 			print("application/pdf")
 		case "txt":
