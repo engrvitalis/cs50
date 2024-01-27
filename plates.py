@@ -38,14 +38,11 @@ def valid_suffix(s):
             continue
         else:
             if c.isdigit():
-                if c == "0":
+                # check if c is not 0 and remaining integers.
+                try:
+                    return c != "0" and int(s[s.index(c):])
+                except:
                     return False
-                else:
-                    try:
-                        int(s[s.index(c):])
-                    except:
-                        return False
-                    return True
     return True
 
 main()
