@@ -10,7 +10,7 @@ def main():
 	#prompt the user for the name of a file
 	f = input("Enter file name: ").lower().strip()
 	i = len(f) - 1
-	while i >= 0:
+	while i > 0:
 		if f[i] == '.':
 			e = f[i+1:]
 			break
@@ -32,6 +32,5 @@ def main():
 			print("application/zip")
 		case _:
 			print("application/octet-stream")
-
 
 main()
