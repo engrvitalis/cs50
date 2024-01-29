@@ -1,22 +1,25 @@
 """
-This program that enables a user to place an order, prompting them 
-for items, one per line, until the user inputs control-d. After each 
-inputted item, display the total cost of all items inputted thus far, 
-prefixed with a dollar sign ($) and formatted to two decimal places. 
-Treat the user’s input case insensitively. Ignore any input that isn’t 
+This program that enables a user to place an order, prompting them
+for items, one per line, until the user inputs control-d. After each
+inputted item, display the total cost of all items inputted thus far,
+prefixed with a dollar sign ($) and formatted to two decimal places.
+Treat the user’s input case insensitively. Ignore any input that isn’t
 an item. Assume that every item on the menu will be titlecased.
 """
 def main():
     total = 0
     # get user input, check for error and accumulate total
     while True:
-        s = input("Item: ").title()
         try:
+            s = input("Item: ").title()
             total += sub_total(s)
+        except EOFError:
+            print("")
+            break
         except:
             continue
 
-        print(f'Total: {total:.2f}')
+        print(f'Total: ${total:.2f}')
 
 def sub_total(s):
     items = {
